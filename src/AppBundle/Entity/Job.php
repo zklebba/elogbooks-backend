@@ -13,6 +13,7 @@ class Job
 {
     const STATUS_OPEN = 0;
     const STATUS_DONE = 1;
+    const STATUS_IN_PROGRESS = 2;
 
     /**
      * @var integer
