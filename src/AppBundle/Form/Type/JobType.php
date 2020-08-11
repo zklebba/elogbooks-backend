@@ -3,6 +3,7 @@
 namespace AppBundle\Form\Type;
 
 use AppBundle\Entity\Job;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,6 +17,7 @@ class JobType extends AbstractApiType
     {
         $builder
             ->add('description', null, [])
+            ->add('status', NumberType::class)
         ;
     }
 
